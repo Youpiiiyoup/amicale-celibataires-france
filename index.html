@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amicale des Célibataires de France | Contre la solitude, créons du lien</title>
+    <meta name="description" content="L'Amicale des Célibataires de France agit ensemble contre la solitude et l'isolement. Rejoignez-nous pour créer des liens sociaux et amicaux en France.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i data-lucide="heart-handshake" class="logo-icon"></i>
+                <span class="logo-text">Amicale des Célibataires</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#mission" class="nav-link">Notre Mission</a></li>
+                    <li><a href="#pour-qui" class="nav-link">Pour Qui ?</a></li>
+                    <li><a href="#actions" class="nav-link">Nos Actions</a></li>
+                </ul>
+                <a href="#rejoindre" class="btn btn-primary nav-cta">Nous Rejoindre</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text-area">
+                <span class="badge">Association Française</span>
+                <h1 class="hero-title">Agir ensemble contre la <span>solitude</span></h1>
+                <p class="hero-subtitle">
+                    Nous soutenons les personnes seules et isolées en créant des liens sociaux, intergénérationnels et interculturels partout en France. Ne restez plus seul(e).
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#rejoindre" class="btn btn-primary btn-large">Adhérer à l'association</a>
+                    <a href="#mission" class="btn btn-outline btn-large">Découvrir nos valeurs</a>
+                </div>
+            </div>
+            <div class="hero-image-area">
+                <div class="hero-image-wrapper">
+                    <img src="images/hero.png" alt="Groupe de personnes souriantes et chaleureuses, illustrant le lien social" class="hero-image">
+                    <div class="glass-card floating-card-1">
+                        <i data-lucide="users" class="card-icon"></i>
+                        <div class="card-text">
+                            <strong>Une communauté</strong>
+                            <span>bienveillante</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission section" id="mission">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Mission</h2>
+                <p class="section-description">Briser l'isolement sous toutes ses formes et recréer la chaleur humaine dont chacun a besoin.</p>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon-wrapper bg-soft-orange">
+                        <i data-lucide="heart" class="mission-icon text-orange"></i>
+                    </div>
+                    <h3>Soutien et Écoute</h3>
+                    <p>Apporter un soutien moral inconditionnel aux personnes souffrant de solitude en offrant une oreille attentive et bienveillante.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon-wrapper bg-soft-blue">
+                        <i data-lucide="network" class="mission-icon text-blue"></i>
+                    </div>
+                    <h3>Lien Social & Amitié</h3>
+                    <p>Favoriser la rencontre et l'émergence de liens d'amitié sincères à travers des moments de partage conviviaux.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon-wrapper bg-soft-green">
+                        <i data-lucide="globe" class="mission-icon text-green"></i>
+                    </div>
+                    <h3>Diversité & Inclusion</h3>
+                    <p>Créer des ponts interculturels et intergénérationnels, car la richesse d'une communauté réside dans sa diversité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pour Qui Section -->
+    <section class="pour-qui section bg-light" id="pour-qui">
+        <div class="container pour-qui-content">
+            <div class="pour-qui-image-area">
+                <img src="images/community.png" alt="Personnes marchant ensemble dans la nature, symbolisant la solidarité" class="rounded-image">
+                <div class="stat-card">
+                    <span class="stat-number">+1000</span>
+                    <span class="stat-text">sourires retrouvés</span>
+                </div>
+            </div>
+            <div class="pour-qui-text-area">
+                <h2 class="section-title">À qui s'adresse notre association ?</h2>
+                <p class="section-description-left">La solitude n'épargne personne. Notre association est ouverte à toutes les personnes seules, quelles que soient leurs histoires ou leurs parcours de vie :</p>
+                
+                <ul class="audience-list">
+                    <li>
+                        <i data-lucide="check-circle-2" class="text-primary"></i>
+                        <span>Célibataires, veufs(ves), divorcés(es) ou séparés(es)</span>
+                    </li>
+                    <li>
+                        <i data-lucide="check-circle-2" class="text-primary"></i>
+                        <span>Personnes anciennement pacsées</span>
+                    </li>
+                    <li>
+                        <i data-lucide="check-circle-2" class="text-primary"></i>
+                        <span>Personnes n'arrivant pas à avoir d'enfants ou ayant perdu un enfant</span>
+                    </li>
+                    <li>
+                        <i data-lucide="check-circle-2" class="text-primary"></i>
+                        <span>Personnes avec ou sans enfants, parents isolés</span>
+                    </li>
+                    <li>
+                        <i data-lucide="check-circle-2" class="text-primary"></i>
+                        <span>Enfants mineurs accompagnés d'un parent adhérent</span>
+                    </li>
+                    <li>
+                        <i data-lucide="check-circle-2" class="text-primary"></i>
+                        <span>Orphelins(es)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section section" id="rejoindre">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-text">
+                    <h2>Prêt(e) à faire le premier pas ?</h2>
+                    <p>Ne laissez plus la solitude dicter votre quotidien. Rejoignez une communauté aimante et solidaire dès aujourd'hui.</p>
+                </div>
+                <div class="cta-actions">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Merci de votre intérêt ! Ceci est une démonstration.');">
+                        <div class="input-group">
+                            <input type="email" placeholder="Votre adresse e-mail" required aria-label="Adresse e-mail">
+                            <button type="submit" class="btn btn-secondary">Je me renseigne</button>
+                        </div>
+                        <p class="form-hint">Nous vous recontacterons pour vous donner toutes les informations sur l'adhésion.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <i data-lucide="heart-handshake" class="logo-icon text-white"></i>
+                    <span class="logo-text text-white">Amicale des Célibataires<br/><small>de France</small></span>
+                </a>
+                <p class="footer-bio">Association française loi 1901 visant à créer du lien social et d'amitié entre les personnes isolées.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#mission">Notre Mission</a></li>
+                    <li><a href="#actions">Nos Actions</a></li>
+                    <li><a href="#rejoindre">Devenir Membre</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i data-lucide="mail" class="footer-icon"></i> contact@amicale-celibataires.fr</li>
+                    <li><i data-lucide="map-pin" class="footer-icon"></i> Siège : Cergy (95), France</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Amicale des Célibataires de France. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
