@@ -26,11 +26,13 @@
                 <i data-lucide="heart-handshake" class="logo-icon"></i>
                 <span class="logo-text">Amicale des Célibataires</span>
             </a>
-            <nav class="nav">
+            <nav class="nav" id="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#mission" class="nav-link">Notre Mission</a></li>
                     <li><a href="#pour-qui" class="nav-link">Pour Qui ?</a></li>
-                    <li><a href="#actions" class="nav-link">Nos Actions</a></li>
+                    <li><a href="#actions" class="nav-link">Événements</a></li>
+                    <li><a href="#benevolat" class="nav-link">Devenir Bénévole</a></li>
+                    <li><a href="#newsletters" class="nav-link">Actualités</a></li>
                 </ul>
                 <a href="#rejoindre" class="btn btn-primary nav-cta">Nous Rejoindre</a>
             </nav>
@@ -145,10 +147,384 @@
                 </ul>
             </div>
         </div>
+        </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section section" id="rejoindre">
+    <!-- Events Section -->
+    <section class="events-section section" id="actions">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Notre Agenda</span>
+                <h2 class="section-title">Nos Actions & Événements</h2>
+                <p class="section-description">Participez à nos rencontres, ateliers et sorties. Trouvez l'événement qui vous correspond et inscrivez-vous en quelques clics.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="event-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="regular">Réguliers & Ateliers</button>
+                <button class="filter-btn" data-filter="repas">Repas Partagés</button>
+                <button class="filter-btn" data-filter="salons">Salons 2027</button>
+                <button class="filter-btn" data-filter="ag">Officiel</button>
+            </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid">
+                <!-- Balades -->
+                <div class="event-card animate-hover" data-category="regular">
+                    <div class="event-card-header bg-soft-orange">
+                        <span class="event-badge text-orange">Balade</span>
+                        <i data-lucide="footprints" class="event-icon text-orange"></i>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Balades Quotidiennes</h3>
+                        <div class="event-meta">
+                            <p><i data-lucide="calendar"></i> Tous les jours</p>
+                            <p><i data-lucide="clock"></i> 16:00 - 18:00</p>
+                            <p><i data-lucide="map-pin"></i> En extérieur (sauf intempéries)</p>
+                        </div>
+                        <p class="event-text">Des balades conviviales en plein air pour discuter, respirer et faire connaissance. Le meilleur moyen de briser la routine quotidienne.</p>
+                        <button class="btn btn-primary btn-sm btn-register" data-event="Balades Quotidiennes (16h-18h)">S'inscrire</button>
+                    </div>
+                </div>
+
+                <!-- Informatique -->
+                <div class="event-card animate-hover" data-category="regular">
+                    <div class="event-card-header bg-soft-blue">
+                        <span class="event-badge text-blue">Atelier</span>
+                        <i data-lucide="laptop" class="event-icon text-blue"></i>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Atelier Informatique</h3>
+                        <div class="event-meta">
+                            <p><i data-lucide="calendar"></i> Sessions régulières</p>
+                            <p><i data-lucide="clock"></i> Horaires variables</p>
+                            <p><i data-lucide="map-pin"></i> Local de l'association</p>
+                        </div>
+                        <p class="event-text">Apprenez à maîtriser vos outils numériques (ordinateur, tablette, smartphone) dans une ambiance détendue et solidaire.</p>
+                        <button class="btn btn-primary btn-sm btn-register" data-event="Atelier Informatique">S'inscrire</button>
+                    </div>
+                </div>
+
+                <!-- Ateliers en Ligne -->
+                <div class="event-card animate-hover highlight-card" data-category="regular">
+                    <div class="event-card-header bg-soft-green">
+                        <span class="event-badge text-green">En Ligne</span>
+                        <i data-lucide="video" class="event-icon text-green"></i>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Ateliers en ligne (Mensuels)</h3>
+                        <div class="event-meta">
+                            <p><i data-lucide="calendar"></i> 1 atelier par mois</p>
+                            <p><i data-lucide="clock"></i> En soirée</p>
+                            <p><i data-lucide="globe"></i> Visioconférence (Zoom)</p>
+                        </div>
+                        <p class="event-text">Favorisez les échanges et passez un bon moment ensemble à distance et en toute bienveillance (Soirée Quiz, Blind Test, cercles de parole...).</p>
+                        <button class="btn btn-primary btn-sm btn-register" data-event="Ateliers en ligne">S'inscrire aux Ateliers</button>
+                    </div>
+                </div>
+
+                <!-- Repas Partagés -->
+                <div class="event-card animate-hover" data-category="repas">
+                    <div class="event-card-header bg-soft-orange">
+                        <span class="event-badge text-orange">Convivialité</span>
+                        <i data-lucide="utensils" class="event-icon text-orange"></i>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Repas Partagés</h3>
+                        <div class="event-meta">
+                            <p><i data-lucide="calendar"></i> 10 dimanches clés (2026-2027)</p>
+                            <p><i data-lucide="clock"></i> À partir de 12:30</p>
+                            <p><i data-lucide="map-pin"></i> Salle associative de l'Amicale</p>
+                        </div>
+                        <p class="event-text">Chacun apporte un plat à partager. Un moment extrêmement chaleureux pour échanger et ne pas déjeuner seul le dimanche.</p>
+                        
+                        <div class="repas-dates-wrapper">
+                            <button class="repas-toggle-btn"><i data-lucide="calendar-days"></i> Voir les dates prévues</button>
+                            <ul class="repas-dates-list hidden">
+                                <li><strong>2026 :</strong> 20 sept., 11 oct., 8 nov., 20 déc.</li>
+                                <li><strong>2027 :</strong> 3 janv., 14 fév., 14 mars, 11 avr., 23 mai, 13 juin.</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-sm btn-register" data-event="Repas Partagé">S'inscrire</button>
+                    </div>
+                </div>
+
+                <!-- Grands Salons -->
+                <div class="event-card animate-hover" data-category="salons">
+                    <div class="event-card-header bg-soft-blue">
+                        <span class="event-badge text-blue">Sortie</span>
+                        <i data-lucide="ticket" class="event-icon text-blue"></i>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Sorties Grands Salons 2027</h3>
+                        <div class="event-meta">
+                            <p><i data-lucide="calendar"></i> Année 2027</p>
+                            <p><i data-lucide="info"></i> Dates 2027 en attente</p>
+                            <p><i data-lucide="map-pin"></i> Paris (divers salons)</p>
+                        </div>
+                        <p class="event-text">Nous visitons ensemble : Foire de Paris, Salon saveurs, Salon bien être, Salon naturally, Salon Zen, Salon Marjolaine, Salon vivre autrement, Salon du Louvre, Salon chocolat, Salon de l'agriculture.</p>
+                        <button class="btn btn-primary btn-sm btn-register" data-event="Sortie Grands Salons 2027">S'inscrire</button>
+                    </div>
+                </div>
+
+                <!-- Assemblée Générale -->
+                <div class="event-card animate-hover" data-category="ag">
+                    <div class="event-card-header bg-soft-green">
+                        <span class="event-badge text-green">Officiel</span>
+                        <i data-lucide="landmark" class="event-icon text-green"></i>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Assemblée Générale</h3>
+                        <div class="event-meta">
+                            <p><i data-lucide="calendar"></i> Dimanche 12 Septembre 2027</p>
+                            <p><i data-lucide="clock"></i> 14:00</p>
+                            <p><i data-lucide="map-pin"></i> Siège de l'association</p>
+                        </div>
+                        <p class="event-text">Le rendez-vous démocratique incontournable pour voter le rapport moral, le bilan financier et dessiner les orientations futures de l'association.</p>
+                        <button class="btn btn-primary btn-sm btn-register" data-event="Assemblée Générale (12 Septembre 2027)">S'inscrire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="volunteer-section section bg-light" id="benevolat">
+        <div class="container">
+            <div class="volunteer-grid">
+                <div class="volunteer-text-area">
+                    <span class="badge">Engagement</span>
+                    <h2 class="section-title">Devenir Bénévole</h2>
+                    <p class="section-description-left">L'Amicale vit grâce à l'énergie de ses membres. Si vous souhaitez donner un peu de votre temps pour rompre la solitude et créer du lien, vous êtes au bon endroit !</p>
+                    
+                    <div class="volunteer-roles">
+                        <div class="role-item">
+                            <i data-lucide="smile" class="role-icon text-orange"></i>
+                            <div>
+                                <h4>Animer un atelier</h4>
+                                <p>Partagez vos passions (informatique, art, cuisine, discussion) avec d'autres adhérents.</p>
+                            </div>
+                        </div>
+                        <div class="role-item">
+                            <i data-lucide="map" class="role-icon text-blue"></i>
+                            <div>
+                                <h4>Guider des balades</h4>
+                                <p>Proposez et accompagnez les balades quotidiennes ou des sorties culturelles dans votre région.</p>
+                            </div>
+                        </div>
+                        <div class="role-item">
+                            <i data-lucide="megaphone" class="role-icon text-green"></i>
+                            <div>
+                                <h4>Aider à la communication</h4>
+                                <p>Faites connaître notre action (réseaux sociaux, affiches locales, gestion des outils numériques).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="volunteer-form-area">
+                    <div class="glass-card-form">
+                        <h3>Rejoindre l'équipe</h3>
+                        <p>Dites-nous comment vous souhaitez contribuer à la vie de l'association.</p>
+                        
+                        <form class="volunteer-form" id="volunteer-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vol-lastname">Nom *</label>
+                                    <input type="text" id="vol-lastname" required placeholder="Votre nom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vol-firstname">Prénom *</label>
+                                    <input type="text" id="vol-firstname" required placeholder="Votre prénom">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-email">Adresse e-mail *</label>
+                                    <input type="email" id="vol-email" required placeholder="nom@exemple.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-phone">Numéro de téléphone *</label>
+                                <input type="tel" id="vol-phone" required placeholder="06 12 34 56 78">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-message">Comment souhaitez-vous aider ? *</label>
+                                <textarea id="vol-message" rows="3" required placeholder="Ex: J'aimerais animer des ateliers d'écriture ou guider des balades..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Soumettre ma candidature</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletters Section -->
+    <section class="newsletters-section section" id="newsletters">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Conseils & Ressources</span>
+                <h2 class="section-title">Notre Espace Newsletters</h2>
+                <p class="section-description">Des articles et newsletters pour comprendre l'isolement, y faire face et agir à son échelle au sein du quartier.</p>
+            </div>
+
+            <div class="newsletters-grid">
+                <!-- Newsletter 1 -->
+                <div class="newsletter-card animate-hover">
+                    <div class="newsletter-badge">Mensuel</div>
+                    <div class="newsletter-content">
+                        <h3>Newsletter n°1 — Agir contre l’isolement : comprendre pour mieux agir</h3>
+                        <p class="newsletter-excerpt">L’isolement n’est pas seulement une absence de contacts : c’est une perte de repères, de liens, de confiance. Découvrons comment agir ensemble.</p>
+                        <button class="btn-read-more" data-newsletter="1">Lire la newsletter <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Newsletter 2 -->
+                <div class="newsletter-card animate-hover">
+                    <div class="newsletter-badge">Conseils</div>
+                    <div class="newsletter-content">
+                        <h3>Newsletter n°2 — 10 actions simples pour lutter contre l’isolement</h3>
+                        <p class="newsletter-excerpt">Dire bonjour, proposer un café, organiser un repas partagé... Découvrez 10 gestes simples, concrets et reproductibles dans votre quartier.</p>
+                        <button class="btn-read-more" data-newsletter="2">Lire la newsletter <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Newsletter 3 -->
+                <div class="newsletter-card animate-hover">
+                    <div class="newsletter-badge">Espace & Lien</div>
+                    <div class="newsletter-content">
+                        <h3>Newsletter n°3 — Le pouvoir des lieux : comment les espaces relient</h3>
+                        <p class="newsletter-excerpt">Comment un jardin partagé, un café associatif ou une salle ouverte permettent aux gens de se rencontrer naturellement, sans pression.</p>
+                        <button class="btn-read-more" data-newsletter="3">Lire la newsletter <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event & Workshop Registration Modal -->
+    <div class="modal-overlay" id="registration-modal">
+        <div class="modal-container">
+            <button class="modal-close-btn" id="modal-close" aria-label="Fermer">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <h2>S'inscrire aux ateliers & événements</h2>
+                <p>Rejoignez-nous en remplissant ce formulaire d'inscription. Les places sont limitées !</p>
+            </div>
+            <div class="modal-body">
+                <form id="event-registration-form" class="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reg-lastname">Nom *</label>
+                            <input type="text" id="reg-lastname" required placeholder="Votre nom de famille">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-firstname">Prénom *</label>
+                            <input type="text" id="reg-firstname" required placeholder="Votre prénom">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Âge *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="reg-age" value="< 18 ans" required>
+                                <span>&lt; 18 ans</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="reg-age" value="18 - 25 ans">
+                                <span>18 - 25 ans</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="reg-age" value="26 - 40 ans">
+                                <span>26 - 40 ans</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="reg-age" value="> 41 ans">
+                                <span>&gt; 41 ans</span>
+                            </label>
+                            <label class="radio-label radio-other-label">
+                                <input type="radio" name="reg-age" value="autre" id="age-other-radio">
+                                <span>Autre :</span>
+                                <input type="text" id="age-other-text" placeholder="Spécifier" class="radio-other-input" disabled>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reg-email">Adresse e-mail *</label>
+                            <input type="email" id="reg-email" required placeholder="nom@exemple.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-phone">Numéro de téléphone *</label>
+                            <input type="tel" id="reg-phone" required placeholder="06 12 34 56 78">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-event-select">Je souhaite m’inscrire à l’atelier / événement suivant : *</label>
+                        <select id="reg-event-select" required>
+                            <option value="" disabled selected>Choisissez une option...</option>
+                            <optgroup label="Ateliers en Ligne">
+                                <option value="Atelier 1 : Présentation & rencontre">Atelier 1 : Présentation & rencontre</option>
+                                <option value="Atelier 2 : Soirée Quiz & Blind Test">Atelier 2 : Soirée Quiz & Blind Test</option>
+                                <option value="Atelier 3 : Cercle de parole – “Le célibat, parlons-en”">Atelier 3 : Cercle de parole – “Le célibat, parlons-en”</option>
+                                <option value="Atelier 4 : Atelier créatif – Vision board de mes envies">Atelier 4 : Atelier créatif – Vision board de mes envies</option>
+                            </optgroup>
+                            <optgroup label="Activités Physiques">
+                                <option value="Balades Quotidiennes (16h-18h)">Balades Quotidiennes (16h-18h)</option>
+                                <option value="Atelier Informatique">Atelier Informatique</option>
+                                <option value="Repas Partagé">Repas Partagé (Dimanche)</option>
+                                <option value="Sortie Grands Salons 2027">Sorties Grands Salons 2027</option>
+                                <option value="Assemblée Générale (12 Septembre 2027)">Assemblée Générale (12 Septembre 2027)</option>
+                            </optgroup>
+                            <option value="autre">Autre...</option>
+                        </select>
+                        <input type="text" id="event-other-text" placeholder="Veuillez spécifier l'atelier ou l'événement" class="event-other-input hidden">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Souhaitez-vous être informé(e) des futurs ateliers ? *</label>
+                        <div class="radio-group-horizontal">
+                            <label class="radio-label">
+                                <input type="radio" name="reg-notify" value="OUI" required>
+                                <span>OUI</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="reg-notify" value="Non">
+                                <span>Non</span>
+                            </label>
+                            <label class="radio-label radio-other-label">
+                                <input type="radio" name="reg-notify" value="autre" id="notify-other-radio">
+                                <span>Autre :</span>
+                                <input type="text" id="notify-other-text" placeholder="Spécifier" class="radio-other-input" disabled>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-full">Valider mon inscription</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Reader Modal -->
+    <div class="modal-overlay" id="newsletter-modal">
+        <div class="modal-container modal-large">
+            <button class="modal-close-btn" id="newsletter-close" aria-label="Fermer">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-body" id="newsletter-reader-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toasts (Notifications) Container -->
+    <div class="toast-container" id="toast-container"></div>
         <div class="container">
             <div class="cta-box">
                 <div class="cta-text">
@@ -183,8 +559,9 @@
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#mission">Notre Mission</a></li>
-                    <li><a href="#actions">Nos Actions</a></li>
-                    <li><a href="#rejoindre">Devenir Membre</a></li>
+                    <li><a href="#actions">Événements</a></li>
+                    <li><a href="#benevolat">Devenir Bénévole</a></li>
+                    <li><a href="#newsletters">Actualités</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
